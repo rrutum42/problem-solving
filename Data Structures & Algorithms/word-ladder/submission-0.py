@@ -3,6 +3,11 @@ import string
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         '''
+        TC O(m^2 * n) m is length of word and n is number of words
+        Total Time = Total Words Processed * Work Per Word = O(N) *  O(M^2) 
+        SC O(m * n)
+        (queue + visited + wordlist)
+        
         BFS
         https://leetcode.com/problems/word-ladder/solutions/1764371/a-very-highly-detailed-explanation-by-hi-vcve
         we add the beginWord in queue and start with BFS from that word.
