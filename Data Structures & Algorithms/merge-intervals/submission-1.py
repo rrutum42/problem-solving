@@ -1,6 +1,6 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        # O(logn), O(n)
+        # O(nlogn), O(n)
         intervals.sort(key=lambda pair: pair[0])
 
         merged = [intervals[0]]
